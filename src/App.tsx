@@ -1,11 +1,16 @@
 import React from "react";
 import { Typography } from "@mui/material";
-import { AppContainer } from "./styles/App";
+import { AppContainer, MainContainer } from "./styles/App";
+import Start from "./components/Start/Start";
+import Board from "./components/Board/Board";
 
 function App() {
   return (
     <AppContainer>
-      <Typography>asd</Typography>
+      <MainContainer>
+        <Start />
+        <Board />
+      </MainContainer>
     </AppContainer>
   );
 }

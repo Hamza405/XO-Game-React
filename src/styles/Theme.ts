@@ -26,6 +26,7 @@ export const Colors = {
     // Grays
     ///////////////
     gray: "#a8bec9",
+    gray_dark:"#7a8991",
     dim_grey: "#696969",
     dove_gray: "#d5d5d5",
     body_bg: "#f3f6f9",
@@ -39,6 +40,9 @@ export const Colors = {
 
 const theme = createTheme({
     palette: {
+        text: {
+
+        },
         primary: {
             main: Colors.primary,
         },
@@ -49,6 +53,9 @@ const theme = createTheme({
     typography:{
         fontFamily: `"Roboto", "Helvetica", "Arial", sans-serif`,
         fontSize: 16,
+        h1:{
+            fontSize: 22
+        },
         allVariants: {
             color:Colors.gray,
             textTransform: "uppercase",
@@ -56,6 +63,11 @@ const theme = createTheme({
     },
     components: {
         MuiButton: {
+            styleOverrides:{
+                text:{
+                    color:Colors.gray_dark
+                }
+            },
             defaultProps: {
                 disableElevation: true,
                 disableRipple: true,
