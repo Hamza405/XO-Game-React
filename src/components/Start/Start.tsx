@@ -5,7 +5,7 @@ import {
   StartButton,
   StartContainer,
   StartHeader,
-  StartIconPlayers,
+  StartPlayerType,
   StartPlayers,
 } from "../../styles/StartStyles";
 
@@ -18,14 +18,16 @@ const Start: FC = () => {
           pick player 1's marks
         </Typography>
         <StartPlayers>
-          <StartIconPlayers></StartIconPlayers>
-          <StartIconPlayers></StartIconPlayers>
+          <StartPlayerType isActive={false}>X</StartPlayerType>
+          <StartPlayerType isActive={true}>O</StartPlayerType>
         </StartPlayers>
         <Typography>remember x : go first</Typography>
       </Card>
       <StartButton>
-        <Button>new game vs cpu</Button>
-        <Button>new game vs player</Button>
+        <Button variant="contained" color="secondary">
+          new game vs cpu
+        </Button>
+        <Button variant="contained">new game vs player</Button>
       </StartButton>
     </StartContainer>
   );

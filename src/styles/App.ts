@@ -6,7 +6,7 @@ export const AppContainer = styled(Box)(({theme})=>({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: theme.palette.primary.main
+    backgroundColor: theme.palette.background.default
 }))
 
 export const MainContainer = styled(Box)(({theme})=>({
@@ -17,4 +17,13 @@ export const MainContainer = styled(Box)(({theme})=>({
     border: "1px solid white"
 }))
 
-export const Card = styled(Box)(({theme})=>({}))
+export const Card = styled(Box)(({theme})=>({
+    display:"flex",
+    flexDirection:"column",
+    gap:25,
+    padding:25,
+    borderRadius:15,
+    backgroundColor: theme.palette.background.paper,
+    textAlign:"center"
+
+}))

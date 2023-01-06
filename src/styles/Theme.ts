@@ -31,6 +31,12 @@ export const Colors = {
     dove_gray: "#d5d5d5",
     body_bg: "#f3f6f9",
     light_gray: "rgb(230,230,230)",
+
+    bg_dark: "#192a33",
+    bg_light: "#1f3640",
+
+    blue: "#30c4be",
+    yellow: "#f2b238",
     ///////////////
     // Solid Color
     ///////////////
@@ -40,15 +46,19 @@ export const Colors = {
 
 const theme = createTheme({
     palette: {
-        text: {
-
+        background: {
+            default: Colors.bg_dark,
+            paper: Colors.bg_light
         },
         primary: {
-            main: Colors.primary,
+            main: Colors.blue,
         },
         secondary: {
-            main: Colors.secondary
-        }
+            main: Colors.yellow
+        },
+       info:{
+        main:Colors.gray
+       }
     },
     typography:{
         fontFamily: `"Roboto", "Helvetica", "Arial", sans-serif`,
