@@ -1,4 +1,5 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled,Button } from "@mui/material";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 export const AppContainer = styled(Box)(({theme})=>({
     width: "100%",
@@ -26,4 +27,21 @@ export const Card = styled(Box)(({theme})=>({
     backgroundColor: theme.palette.background.paper,
     textAlign:"center"
 
+}))
+
+export const ButtonStyle = styled(Button)(({theme,color})=>(
+    {
+    transition: 'all 0.2s',
+    borderRadius: 10,
+     boxShadow: `0 6px 0 ${color==='primary'?theme.palette.primary.dark:theme.palette.secondary.dark}`,
+     marginBottom:'8px',
+   '&:hover': {
+        backgroundColor: color==='primary'?theme.palette.primary.main:theme.palette.secondary.main,
+        boxShadow: `0 6px 0 ${color==='primary'?theme.palette.primary.dark:theme.palette.secondary.dark}`,    
+        transform: 'translateY(-2px)'
+    },
+    '&:active': {
+        transform: 'translateY(2px)',
+        boxShadow: `0 6px 0 ${color==='primary'?theme.palette.primary.dark:theme.palette.secondary.dark}`,
+      }
 }))

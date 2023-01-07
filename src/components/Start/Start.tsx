@@ -8,7 +8,7 @@ import {
   StartPlayerType,
   StartPlayers,
 } from "../../styles/StartStyles";
-
+import { ButtonStyle } from "../../styles/App";
 const Start: FC = () => {
   return (
     <StartContainer>
@@ -24,10 +24,12 @@ const Start: FC = () => {
         <Typography>remember x : go first</Typography>
       </Card>
       <StartButton>
-        <Button variant="contained" color="secondary">
+        <ButtonStyle variant="contained" color="secondary">
           new game vs cpu
-        </Button>
-        <Button variant="contained">new game vs player</Button>
+        </ButtonStyle>
+        <ButtonStyle variant="contained" color="primary">
+          new game vs player
+        </ButtonStyle>
       </StartButton>
     </StartContainer>
   );

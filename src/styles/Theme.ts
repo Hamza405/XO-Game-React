@@ -37,6 +37,8 @@ export const Colors = {
 
     blue: "#30c4be",
     yellow: "#f2b238",
+    yellowDark: '#cd8d16',
+    blueDark: '#128c89',
     ///////////////
     // Solid Color
     ///////////////
@@ -52,12 +54,16 @@ const theme = createTheme({
         },
         primary: {
             main: Colors.blue,
+            dark: Colors.blueDark
         },
         secondary: {
-            main: Colors.yellow
+            main: Colors.yellow,
+            dark: Colors.yellowDark
         },
        info:{
-        main:Colors.gray
+        main:Colors.gray,
+        dark:Colors.gray_dark
+
        }
     },
     typography:{
@@ -79,6 +85,8 @@ const theme = createTheme({
                 }
             },
             defaultProps: {
+                disableFocusRipple:true,
+                disableTouchRipple:true,
                 disableElevation: true,
                 disableRipple: true,
               },
