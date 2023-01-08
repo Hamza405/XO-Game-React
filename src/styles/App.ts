@@ -1,5 +1,4 @@
 import { Box, styled,Button } from "@mui/material";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 export const AppContainer = styled(Box)(({theme})=>({
     width: "100%",
@@ -49,7 +48,7 @@ export const ButtonStyle = styled(Button)(({theme,color})=>(
 export const IconContainer = styled(Box)<{size:string,color:string}>(({theme,color,size})=>({
     display: "inline-block",
     svg: {
-        fill: color==="blue"?theme.palette.primary.main: color ==="yellow" ? theme.palette.secondary.main : theme.palette.info.main,
+        fill: color==="blue"?theme.palette.primary.main: color ==="yellow" ?  theme.palette.secondary.main : color==="dark"? theme.palette.background.default :theme.palette.info.main,
         width: size==="lg"?'65px': size==="sm" ? "30px" : '50px',
         height:size==="lg"?'65px': size==="sm" ? "30px" : '50px',
         verticalAlign: 'middle',

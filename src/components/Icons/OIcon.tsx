@@ -1,6 +1,9 @@
-const OIcon = () => {
+import { FC } from "react";
+import { IconContainer } from "../../styles/App";
+
+const OIcon: FC<{ size: string; color: string }> = ({ size, color }) => {
   return (
-    <>
+    <IconContainer size={size} color={color}>
       <svg
         version="1.1"
         id="Layer_1"
@@ -15,7 +18,7 @@ const OIcon = () => {
           />
         </g>
       </svg>
-    </>
+    </IconContainer>
   );
 };
 

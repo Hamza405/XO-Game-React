@@ -14,7 +14,9 @@ import XIcon from "../Icons/XIcon";
 const Start: FC = () => {
   return (
     <StartContainer>
-      <StartHeader>X O</StartHeader>
+      <StartHeader>
+        <XIcon size="" color="blue" /> <OIcon size="" color="yellow" />
+      </StartHeader>
       <Card>
         <Typography fontSize="lg" variant="h1">
           pick player 1's marks
@@ -24,7 +26,7 @@ const Start: FC = () => {
             <XIcon size="" color="" />
           </StartPlayerType>
           <StartPlayerType isActive={true}>
-            <OIcon />
+            <OIcon size="" color="dark" />
           </StartPlayerType>
         </StartPlayers>
         <Typography>remember x : go first</Typography>
