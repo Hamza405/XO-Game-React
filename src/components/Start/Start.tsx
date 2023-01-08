@@ -9,6 +9,8 @@ import {
   StartPlayers,
 } from "../../styles/StartStyles";
 import { ButtonStyle } from "../../styles/App";
+import OIcon from "../Icons/OIcon";
+import XIcon from "../Icons/XIcon";
 const Start: FC = () => {
   return (
     <StartContainer>
@@ -18,8 +20,12 @@ const Start: FC = () => {
           pick player 1's marks
         </Typography>
         <StartPlayers>
-          <StartPlayerType isActive={false}>X</StartPlayerType>
-          <StartPlayerType isActive={true}>O</StartPlayerType>
+          <StartPlayerType isActive={false}>
+            <XIcon size="" color="" />
+          </StartPlayerType>
+          <StartPlayerType isActive={true}>
+            <OIcon />
+          </StartPlayerType>
         </StartPlayers>
         <Typography>remember x : go first</Typography>
       </Card>

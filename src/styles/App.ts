@@ -45,3 +45,13 @@ export const ButtonStyle = styled(Button)(({theme,color})=>(
         boxShadow: `0 6px 0 ${color==='primary'?theme.palette.primary.dark:theme.palette.secondary.dark}`,
       }
 }))
+
+export const IconContainer = styled(Box)<{size:string,color:string}>(({theme,color,size})=>({
+    display: "inline-block",
+    svg: {
+        fill: color==="blue"?theme.palette.primary.main: color ==="yellow" ? theme.palette.secondary.main : theme.palette.info.main,
+        width: size==="lg"?'65px': size==="sm" ? "30px" : '50px',
+        height:size==="lg"?'65px': size==="sm" ? "30px" : '50px',
+        verticalAlign: 'middle',
+    }
+}))
