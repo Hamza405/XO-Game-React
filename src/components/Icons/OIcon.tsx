@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { IconContainer } from "../../styles/App";
+import { IconContainer } from "../../styles/AppStyles";
 
 const OIcon: FC<{ size: string; color: string }> = ({ size, color }) => {
   return (

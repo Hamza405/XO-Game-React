@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { IconContainer } from "../../styles/App";
+import { IconContainer } from "../../styles/AppStyles";
 
 const XIcon: FC<{ size: string; color: string }> = ({ size, color }) => {
   return (

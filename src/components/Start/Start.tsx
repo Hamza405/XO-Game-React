@@ -1,6 +1,6 @@
 import { Button, Typography } from "@mui/material";
 import React, { FC } from "react";
-import { Card } from "../../styles/App";
+import { Card } from "../../styles/AppStyles";
 import {
   StartButton,
   StartContainer,
@@ -8,7 +8,7 @@ import {
   StartPlayerType,
   StartPlayers,
 } from "../../styles/StartStyles";
-import { ButtonStyle } from "../../styles/App";
+import { ButtonStyle } from "../../styles/AppStyles";
 import OIcon from "../Icons/OIcon";
 import XIcon from "../Icons/XIcon";
 const Start: FC = () => {
